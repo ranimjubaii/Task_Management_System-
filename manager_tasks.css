@@ -1,0 +1,441 @@
+/* ============================
+   Manager Tasks Page Styles
+   ============================ */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body.manager-tasks {
+    background-color: #fffde6;
+    color: #333;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+/* =========================================
+   BOOTSTRAP NAVBAR THEME OVERRIDES
+   ========================================= */
+
+/* Main Navbar Background & Border */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #ffcc00 !important;
+    padding: 12px 0 !important;
+}
+
+/* Logo / Brand Name */
+.navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+    letter-spacing: -0.5px;
+}
+
+/* =========================================
+   CLEAN & UNIFIED NAVBAR THEME
+   ========================================= */
+
+/* Main Navbar Container */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #ffcc00 !important;
+    padding: 10px 0 !important;
+}
+
+/* Logo Styling */
+.navbar-brand {
+    font-family: 'Segoe UI', sans-serif !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+}
+
+/* =========================================
+   UNIFIED BUTTON GEOMETRY
+   (This makes Home, Tasks, and Buttons look identical)
+   ========================================= */
+
+/* Target every clickable item in the list */
+.navbar-nav .nav-link, 
+.navbar-nav .btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    
+    /* Shape & Size Consistency */
+    height: 40px !important; 
+    padding: 0 20px !important;
+    margin: 5px !important;
+    border-radius: 50px !important; /* Rounded pill shape */
+    
+    /* Typography */
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid transparent !important;
+}
+
+/* 1. Normal Links (Home, Tasks) */
+.navbar-nav .nav-link {
+    color: #555 !important;
+    background-color: #f8f9fa; /* Light grey base */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.text-warning { 
+    background-color: #fff9e6 !important;
+    border-color: #ffcc00 !important;
+    color: #333 !important;
+}
+
+/* 2. Action Buttons (Add Employee, View Submissions) */
+.navbar-nav .btn-outline-warning, 
+.navbar-nav .btn-warning {
+    background-color: #ffcc00 !important;
+    border-color: #ffcc00 !important;
+    color: #fff !important;
+}
+
+.navbar-nav .btn:hover {
+    background-color: #e6b800 !important;
+    border-color: #e6b800 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+}
+
+/* 3. Logout Button (Same shape, different color) */
+.navbar-nav .nav-link.text-danger {
+    color: #f44336 !important;
+    background-color: #fff5f5;
+    border: 2px solid #ffebeb !important;
+}
+
+.navbar-nav .nav-link.text-danger:hover {
+    background-color: #f44336 !important;
+    border-color: #f44336 !important;
+    color: #fff !important;
+}
+
+/* Responsive Toggler */
+.navbar-toggler {
+    border: 2px solid #ffcc00 !important;
+}
+/* Mobile Menu Consistency */
+.navbar-toggler {
+    border: 2px solid #ffcc00 !important;
+    border-radius: 8px;
+}
+
+/* Container */
+.manager-container {
+    max-width: 1100px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.manager-title {
+    font-size: 28px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.manager-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+    font-weight: 600;
+}
+
+/* Notification */
+.manager-notification {
+    background-color: #fff9cc;
+    color: #333;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Form Box */
+.manager-form-box {
+    background-color: #fffefa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 50px;
+}
+
+.manager-form-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+.manager-form-box input[type="text"],
+.manager-form-box input[type="date"],
+.manager-form-box textarea,
+.manager-form-box select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.manager-form-box input:focus,
+.manager-form-box textarea:focus,
+.manager-form-box select:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+.manager-form-box textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.manager-form-box button {
+    background-color: #ffcc00;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.manager-form-box button:hover {
+    background-color: #e6b800;
+}
+
+/* Table Box */
+.manager-table-box {
+    overflow-x: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.manager-table-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+/* Table */
+.manager-table-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.manager-table-box th,
+.manager-table-box td {
+    padding: 16px;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.manager-table-box th {
+    background: linear-gradient(to right, #ffeb3b, #fbc02d);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.manager-table-box tr:nth-child(even) {
+    background-color: #fffef0;
+}
+
+.manager-table-box tr:hover td {
+    background-color: #fff9c4;
+    transition: all 0.2s ease-in-out;
+}
+
+/* ============================
+   Action Buttons (FIXED)
+   ============================ */
+
+.btn-group {
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    gap: 8px;                 /* space between buttons */
+    align-items: center;
+}
+
+.btn-group a {
+    display: inline-block;
+    width: 80px;
+    padding: 6px 10px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+
+/* Update button */
+.update-btn {
+    background-color: #4CAF50;
+}
+
+.update-btn:hover {
+    background-color: #3e8e41;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Back button */
+.manager-back-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.manager-back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.manager-back-link:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+/* ============================
+   New Header Buttons & Review Page
+   ============================ */
+
+/* Container for the buttons above the form */
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Base style for the big manager action buttons */
+.manager-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffcc00; /* Matching your theme yellow */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.manager-btn:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    color: white;
+}
+
+/* Specific color for View Submissions to make it stand out */
+.view-sub-btn {
+    background-color: #28a745; /* Green for "Reviews/Done" work */
+}
+
+.view-sub-btn:hover {
+    background-color: #218838;
+}
+
+/* Submission Page Specific Styles */
+.comment-box {
+    max-width: 250px;
+    word-wrap: break-word;
+    font-style: italic;
+    color: #666;
+    text-align: left !important;
+}
+
+/* Style for the Download/View File link in the table */
+.file-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #fbc02d;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #fbc02d;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.file-link:hover {
+    background-color: #fbc02d;
+    color: white;
+}
+
+.no-file {
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+/* ============================
+   Status Badges (For Manager Table)
+   ============================ */
+.status {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+.status.pending {
+    background-color: #fff9c4;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.status.done {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}

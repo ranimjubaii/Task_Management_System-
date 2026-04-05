@@ -1,0 +1,110 @@
+/* =========================================
+   TASKMASTER PRO - PROFESSIONAL LOGIN
+   ========================================= */
+
+/* Center the login container on the page */
+body.login-page {
+    /* Matching the soft yellow background from your manager dashboard */
+    background: linear-gradient(135deg, #fffde6 0%, #fff9f0 100%); 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The Login Card */
+.login-container {
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 20px; /* Matching the rounded corners in your screenshots */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Title Styling */
+.login-container h2 {
+    font-weight: 800;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+/* Form Inputs */
+.login-container input {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px; /* Smooth rounded corners */
+    font-size: 15px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Fixes width issues */
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #ffcc00; /* Signature yellow border */
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(255, 204, 0, 0.1);
+}
+
+/* Error Message Styling */
+.login-error {
+    color: #f44336;
+    background-color: #fff5f5;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border: 1px solid #ffebeb;
+}
+
+/* Login Button */
+.login-container button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #ffcc00, #ffb300);
+    border: none;
+    border-radius: 12px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.2);
+    margin-top: 10px;
+}
+
+.login-container button:hover {
+    background: linear-gradient(to right, #ffb300, #e6a800);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 204, 0, 0.3);
+}
+
+/* Back Link Styling */
+.manager-back-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #888;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.manager-back-link:hover {
+    color: #ffcc00;
+    transform: translateX(-5px); /* Arrow "nudge" effect */
+}

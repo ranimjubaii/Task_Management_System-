@@ -1,0 +1,121 @@
+/* ============================
+   View Submissions Page Styles
+   ============================ */
+
+/* Reuse the base look from Manager Tasks */
+body.manager-tasks {
+    background-color: #fffde6;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 20px;
+}
+
+.manager-container {
+    max-width: 1100px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.manager-title {
+    font-size: 28px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #ffcc00;
+    display: table; /* Centers the border to the text width */
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+/* Table Styling */
+.table-box {
+    overflow-x: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: linear-gradient(to right, #ffeb3b, #fbc02d);
+    padding: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #fffef0;
+}
+
+/* Specific Column: Worker's Comment */
+td:nth-child(3) {
+    max-width: 300px;
+    word-wrap: break-word;
+    font-style: italic;
+    color: #666;
+    text-align: left;
+}
+
+/* File View Button */
+.file-link {
+    display: inline-block;
+    padding: 8px 15px;
+    color: #fbc02d;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #fbc02d;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.file-link:hover {
+    background-color: #fbc02d;
+    color: #fff;
+    text-decoration: none;
+}
+
+.no-file {
+    color: #bbb;
+    font-style: italic;
+}
+
+/* Back Button */
+.manager-back-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.manager-back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.manager-back-link:hover {
+    background-color: #ffcc00;
+    color: white;
+}

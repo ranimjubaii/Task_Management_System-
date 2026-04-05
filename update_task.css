@@ -1,0 +1,122 @@
+/* ============================
+   Update Task Page Styles
+   ============================ */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #fffde6; /* light yellow background */
+    color: #333;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Container */
+.manager-container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.manager-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+    font-size: 26px;
+    border-bottom: 3px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Form Layout */
+.manager-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.manager-container input[type="text"],
+.manager-container input[type="date"],
+.manager-container textarea,
+.manager-container select {
+    flex: 1 1 48%; /* two inputs per row */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.manager-container textarea {
+    flex: 1 1 100%; /* textarea takes full row */
+    min-height: 100px;
+    resize: vertical;
+}
+
+.manager-container input:focus,
+.manager-container textarea:focus,
+.manager-container select:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+/* Save Button */
+.manager-container button {
+    background-color: white; /* white background */
+    color: #4caf50; /* green text */
+    padding: 12px 24px;
+    border: 2px solid #4caf50;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.manager-container button:hover {
+    background-color: #4caf50; /* green box */
+    color: white; /* white text */
+}
+
+/* Back Link */
+.manager-back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.manager-back-link:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .manager-container form {
+        flex-direction: column;
+    }
+
+    .manager-container button {
+        width: 100%;
+    }
+}

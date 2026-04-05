@@ -1,0 +1,134 @@
+/* =========================================
+   CORE PAGE STYLING (TaskMaster Pro Theme)
+   ========================================= */
+body.manager-tasks {
+    background: linear-gradient(to right, #fffde6, #fff9f0); /* Soft yellow gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Main Content Card */
+.manager-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.manager-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Gradient Title */
+.manager-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #ffb300, #ffd54f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================
+   UNIFIED NAVBAR (PILL STYLE)
+   ========================================= */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #ffcc00 !important;
+    padding: 10px 0 !important;
+}
+
+.navbar-nav .nav-link, 
+.navbar-nav .nav-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 40px !important; 
+    padding: 0 20px !important;
+    margin: 0 5px;
+    border-radius: 50px !important; /* The "Pill" look */
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid transparent !important;
+}
+
+/* Navbar Button States */
+.navbar-nav .nav-link { background-color: #f8f9fa; color: #555 !important; }
+.navbar-nav .nav-link:hover { background-color: #fff9e6 !important; border-color: #ffcc00 !important; }
+.navbar-nav .active-task { background-color: #fff9e6 !important; border-color: #ffcc00 !important; color: #333 !important; }
+.navbar-nav .logout-btn { color: #f44336 !important; border: 2px solid #ffebeb !important; }
+.navbar-nav .logout-btn:hover { background-color: #f44336 !important; color: #fff !important; border-color: #f44336 !important; }
+
+/* =========================================
+   WORKER TABLE & ACTION ELEMENTS
+   ========================================= */
+.manager-table-box {
+    background: #fff;
+    border-radius: 12px;
+}
+
+.table thead {
+    background: linear-gradient(to right, #ffd54f, #ffb300);
+    border-radius: 10px;
+}
+
+.table thead th {
+    color: #333;
+    font-weight: 700;
+    border: none;
+    padding: 15px;
+}
+
+.table tbody tr {
+    transition: background 0.3s ease;
+    border-bottom: 1px solid #eee;
+}
+
+.table tbody tr:hover {
+    background-color: #fffdf0;
+}
+
+/* Textarea & Inputs */
+textarea.form-control-sm {
+    min-height: 50px;
+    border-radius: 10px !important;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+textarea:focus, input:focus {
+    border-color: #ffcc00 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.15) !important;
+}
+
+/* Status Badges */
+.status {
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+}
+.status.pending { background: #fff3cd; color: #856404; }
+.status.done { background: #d4edda; color: #155724; }
+
+/* The "Update" Button inside the table */
+.btn-warning {
+    background: linear-gradient(to right, #ffb300, #ffd54f);
+    border: none !important;
+    border-radius: 10px !important; /* Slightly more square than navbar pills */
+    color: #333 !important;
+    font-weight: 700;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+}

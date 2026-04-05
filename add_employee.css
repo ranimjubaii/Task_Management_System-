@@ -1,0 +1,38 @@
+/* Add Employee Page Styles */
+
+.employee-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.employee-form input,
+.employee-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.employee-form input:focus,
+.employee-form select:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+.employee-form button {
+    background-color: #4caf50; /* green */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.employee-form button:hover {
+    background-color: #388e3c;
+}
